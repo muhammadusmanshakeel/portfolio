@@ -1,0 +1,81 @@
+.root {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  pointer-events: none;
+}
+
+:global(html.cursor-custom) .root {
+  display: block;
+}
+
+.dot,
+.ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  will-change: transform, opacity;
+  pointer-events: none;
+}
+
+.dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--color-signal);
+  box-shadow: var(--glow-sm);
+  z-index: 2;
+  transition:
+    width 180ms var(--ease-out),
+    height 180ms var(--ease-out),
+    background-color 180ms var(--ease-out),
+    box-shadow 180ms var(--ease-out);
+}
+
+.ring {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid color-mix(in srgb, var(--color-signal) 75%, transparent);
+  background: color-mix(in srgb, var(--color-signal) 10%, transparent);
+  box-shadow: var(--glow-sm);
+  z-index: 1;
+  transition:
+    border-color 180ms var(--ease-out),
+    background-color 180ms var(--ease-out),
+    width 180ms var(--ease-out),
+    height 180ms var(--ease-out),
+    box-shadow 180ms var(--ease-out);
+}
+
+:global(html.cursor-hover) .ring {
+  border-color: var(--color-signal);
+  background: color-mix(in srgb, var(--color-signal) 18%, transparent);
+  box-shadow: var(--glow-md);
+}
+
+:global(html.cursor-hover) .dot {
+  width: 5px;
+  height: 5px;
+  background: #fff;
+  box-shadow: var(--glow-md);
+}
+
+:global(html.cursor-down) .ring {
+  width: 28px;
+  height: 28px;
+  background: color-mix(in srgb, var(--color-signal) 28%, transparent);
+}
+
+:global(html.cursor-down) .dot {
+  width: 4px;
+  height: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .root {
+    display: none !important;
+  }
+}

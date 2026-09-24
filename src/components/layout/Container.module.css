@@ -1,0 +1,19 @@
+.container {
+  width: min(100% - 2rem, var(--container-max));
+  margin-inline: auto;
+}
+
+.narrow {
+  width: min(100% - 2rem, var(--container-narrow));
+}
+
+@media (min-width: 640px) {
+  .container,
+  .narrow {
+    width: min(100% - 3rem, var(--container-max));
+  }
+
+  .narrow {
+    width: min(100% - 3rem, var(--container-narrow));
+  }
+}

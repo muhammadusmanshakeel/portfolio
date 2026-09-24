@@ -1,0 +1,46 @@
+.page {
+  padding-block: clamp(5rem, 14vw, 8rem) var(--space-10);
+}
+
+.code {
+  margin-bottom: var(--space-4);
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  letter-spacing: var(--tracking-wide);
+  color: var(--color-signal);
+}
+
+.title {
+  margin-bottom: var(--space-4);
+  font-size: var(--text-2xl);
+}
+
+.copy {
+  margin-bottom: var(--space-7);
+  color: var(--color-ink-muted);
+  font-size: var(--text-md);
+  max-width: 36ch;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-bottom: var(--space-6);
+}
+
+.hint {
+  font-size: var(--text-sm);
+  color: var(--color-ink-muted);
+}
+
+.hint a {
+  color: var(--color-signal);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.hint a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}

@@ -1,0 +1,26 @@
+.reveal {
+  opacity: 0;
+  transform: translateY(1.75rem) scale(0.985);
+  filter: blur(4px);
+  transition:
+    opacity var(--duration-slow) var(--ease-emphasized),
+    transform var(--duration-slow) var(--ease-emphasized),
+    filter var(--duration-slow) var(--ease-emphasized);
+  will-change: opacity, transform, filter;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  filter: blur(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    filter: none;
+    transition: none;
+    will-change: auto;
+  }
+}
