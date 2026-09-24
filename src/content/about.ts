@@ -2,7 +2,7 @@ export const aboutContent = {
   eyebrow: "01 — About",
   title: "From design foundations to production web work",
   lead:
-    "I’m Muhammad Usman Shakeel — a professional web developer who started in graphic design and grew into building responsive, database-driven websites.",
+    "I’m Muhammad Usman Shakeel — a senior web developer who started in graphic design and grew into building responsive, database-driven websites.",
   paragraphs: [
     "After completing Intermediate, I joined Emenac.Inc and began my professional technology journey. My first focus was graphic design, working with Adobe Photoshop, Adobe Illustrator, and Adobe XD. That early training sharpened how I think about hierarchy, composition, typography, and interface structure.",
     "From there I moved into web development — first with HTML, CSS, JavaScript, and jQuery, then into PHP and MySQL for server-side and database-driven applications. Over time I adopted modern frontend work with React and Next.js, while continuing to build and maintain production websites.",
@@ -23,7 +23,7 @@ export const aboutContent = {
     },
     {
       label: "Focus today",
-      value: "Professional web developer",
+      value: "Senior web developer",
     },
   ],
 } as const;

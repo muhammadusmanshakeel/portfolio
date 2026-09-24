@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: "Muhammad Usman Shakeel",
-  role: "Professional Web Developer",
+  role: "Senior Web Developer",
   positioning:
     "Web developer with a designer’s eye for structure and detail.",
   /** [TODO: replace with live domain] */

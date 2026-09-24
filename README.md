@@ -1,6 +1,6 @@
 # Muhammad Usman Shakeel — Portfolio
 
-Personal portfolio for **Muhammad Usman Shakeel**, Professional Web Developer.
+Personal portfolio for **Muhammad Usman Shakeel**, Senior Web Developer.
 
 ## Stack
 
