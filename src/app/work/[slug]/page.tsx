@@ -126,11 +126,7 @@ export default async function CaseStudyPage({ params }: PageProps) {
                 ))}
               </ul>
             </section>
-          ) : (
-            <PlaceholderNote>
-              [TODO: Add project screenshots under public/images/projects/]
-            </PlaceholderNote>
-          )}
+          ) : null}
         </div>
 
         <div className={styles.actions}>
@@ -145,9 +141,7 @@ export default async function CaseStudyPage({ params }: PageProps) {
             <Button href={project.githubUrl} variant="secondary" external>
               GitHub
             </Button>
-          ) : (
-            <span className={styles.todo}>[TODO: GitHub URL]</span>
-          )}
+          ) : null}
           <Button href="/#work" variant="ghost">
             Back to work
           </Button>
