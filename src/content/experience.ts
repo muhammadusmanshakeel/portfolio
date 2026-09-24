@@ -20,8 +20,8 @@ export const experienceContent = {
     {
       id: "emenac",
       company: "Emenac.Inc",
-      role: "[TODO: exact job title]",
-      roleIsPlaceholder: true,
+      role: "Senior Web Developer",
+      roleIsPlaceholder: false,
       period: "Professional tenure · ~4 years web development",
       location: null,
       summary:
@@ -48,7 +48,4 @@ export const experienceContent = {
       ],
     },
   ] satisfies ExperienceEntry[],
-  /** Empty slots remind that more roles can be added later */
-  futureSlotsNote:
-    "[TODO: Add additional roles or earlier positions here when available]",
 } as const;

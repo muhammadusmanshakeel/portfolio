@@ -111,6 +111,15 @@
   color: color-mix(in srgb, var(--color-signal) 70%, var(--color-ink-muted));
 }
 
+.item.intermediate .level {
+  color: color-mix(in srgb, var(--color-signal) 55%, var(--color-ink-muted));
+}
+
+.legendItem.intermediate {
+  border-color: color-mix(in srgb, var(--color-signal) 35%, transparent);
+  color: color-mix(in srgb, var(--color-signal) 85%, var(--color-ink-muted));
+}
+
 .item.basic .level {
   color: var(--color-ink-muted);
 }

@@ -23,10 +23,10 @@ export const growthContent = {
         "Deepening PHP/MySQL application work — cleaner structure, better data modeling, and more reliable CRUD systems.",
     },
     {
-      id: "python-basic",
-      title: "Python — basic familiarity",
+      id: "python-intermediate",
+      title: "Python — intermediate",
       detail:
-        "I have basic knowledge of Python. I’m not positioning it as a primary professional strength unless project evidence supports more.",
+        "I have intermediate knowledge of Python. I’m not positioning it as a primary professional strength unless project evidence supports more.",
     },
     {
       id: "seo-ads",

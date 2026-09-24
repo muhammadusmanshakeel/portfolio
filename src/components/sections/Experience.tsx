@@ -1,5 +1,4 @@
 import { Section } from "@/components/layout/Section";
-import { PlaceholderNote } from "@/components/ui/PlaceholderNote";
 import { experienceContent } from "@/content/experience";
 import styles from "./Experience.module.css";
 
@@ -45,8 +44,6 @@ export function Experience() {
           </li>
         ))}
       </ul>
-
-      <PlaceholderNote>{experienceContent.futureSlotsNote}</PlaceholderNote>
     </Section>
   );
 }

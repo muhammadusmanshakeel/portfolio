@@ -1,4 +1,4 @@
-export type SkillLevel = "professional" | "working" | "basic";
+export type SkillLevel = "professional" | "working" | "intermediate" | "basic";
 
 export type SkillItem = {
   name: string;
@@ -15,6 +15,7 @@ export type SkillGroup = {
 export const skillLevelLabels: Record<SkillLevel, string> = {
   professional: "Professional",
   working: "Working knowledge",
+  intermediate: "Intermediate",
   basic: "Basic",
 };
 
@@ -90,7 +91,7 @@ export const skillsContent = {
       title: "Other",
       summary: "Supporting skills used honestly at their current level.",
       items: [
-        { name: "Python", level: "basic" },
+        { name: "Python", level: "intermediate" },
       ],
     },
   ] satisfies SkillGroup[],
