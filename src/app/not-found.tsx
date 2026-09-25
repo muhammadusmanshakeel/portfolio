@@ -24,8 +24,7 @@ export default function NotFound() {
         </div>
         <p className={styles.hint}>
           Or browse{" "}
-          <Link href="/#contact">contact</Link> if you’re looking for something
-          specific.
+          <Link href="/#work">selected work</Link> to see recent projects.
         </p>
       </Container>
     </main>

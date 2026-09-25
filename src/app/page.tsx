@@ -8,7 +8,6 @@ import { Work } from "@/components/sections/Work";
 import { Services } from "@/components/sections/Services";
 import { Approach } from "@/components/sections/Approach";
 import { Growth } from "@/components/sections/Growth";
-import { Contact } from "@/components/sections/Contact";
 
 export default function HomePage() {
   return (
@@ -23,7 +22,6 @@ export default function HomePage() {
       <Services />
       <Approach />
       <Growth />
-      <Contact />
     </main>
   );
 }

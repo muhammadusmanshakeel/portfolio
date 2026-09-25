@@ -100,9 +100,11 @@ export function Hero() {
             <Button href="#work" variant="primary">
               View My Work
             </Button>
-            <Button href="#contact" variant="secondary">
-              Let’s Work Together
-            </Button>
+            {siteConfig.email ? (
+              <Button href={`mailto:${siteConfig.email}`} variant="secondary">
+                Email Me
+              </Button>
+            ) : null}
           </div>
 
           {links.length > 0 ? (

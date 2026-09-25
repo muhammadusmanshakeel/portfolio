@@ -14,12 +14,10 @@ export const primaryNav: NavItem[] = [
   { label: "Services", href: "#services" },
   { label: "Approach", href: "#approach" },
   { label: "Growth", href: "#growth" },
-  { label: "Contact", href: "#contact" },
 ];
 
 export const footerNav: NavItem[] = [
   { label: "About", href: "#about" },
   { label: "Work", href: "#work" },
   { label: "Skills", href: "#skills" },
-  { label: "Contact", href: "#contact" },
 ];
